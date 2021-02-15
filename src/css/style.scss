@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+
+  background: linear-gradient(180deg, #2dd051 0%, #368929 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
+}
+
+#root {
+  min-width: 330px;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.todo-app {
+  width: 100%;
+
+  padding: 1.5em 1.2em;
+  border-radius: 16px;
+  background-color: #1e2c4f;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  h1 {
+    margin: 0 auto;
+    font-size: 3em;
+  }
+}
+
+.todo-form {
+  margin-bottom: 2em;
+  input {
+    width: 70%;
+
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    background-color: transparent;
+    border: 2px solid #5d0cff;
+    outline: none;
+    color: #fff;
+    &::placeholder {
+      color: #e2e2e2;
+    }
+  }
+  button {
+    min-width: 25%;
+    padding: 1.2em;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 80%,
+      rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
+}
