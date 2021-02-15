@@ -81,4 +81,57 @@ body {
   color: #fff;
   text-transform: capitalize;
 }
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: -webkit-gradient(linear, left top, right top, from(#149fff), to(#117aff));
+  background: linear-gradient(90deg, #149fff 0%, #117aff 100%);
+}
+
+.todo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom: 1px solid #2dd051;
+  border-right: 8px solid #2dd051;
+  background: bisque;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #000;
+}
+
+.edit-icon {
+  color: #000;
+  margin-left: 5px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
 /*# sourceMappingURL=style.css.map */
